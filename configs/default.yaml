@@ -1,0 +1,28 @@
+# EdgePilot conservative defaults. Paper first. No profit guarantee.
+app_mode: paper
+live_trading_enabled: false
+kill_switch: false
+flatten_on_kill: false
+quote_ccy: USDT
+max_global_live_notional: "250"
+max_strategy_notional: "150"
+max_asset_exposure: "200"
+max_order_notional: "75"
+max_daily_loss_abs: "25"
+max_daily_loss_pct: "2"
+max_drawdown_pct: "8"
+max_consecutive_errors: 5
+max_stale_ms: 5000
+max_book_age_ms: 5000
+max_clock_drift_ms: 1000
+taker_fee_binance: "0.001"
+taker_fee_bybit: "0.001"
+uncertainty_buffer_usdt: "0.50"
+min_net_profit_usdt: "0.25"
+min_net_roi: "0.0005"
+max_slippage_bps: "15"
+pairs:
+  - BTC/USDT
+  - ETH/USDT
+  - SOL/USDT
+live_confirmation_phrase: "" # must equal I_UNDERSTAND_LIVE_TRADING_CAN_LOSE_MONEY to arm live
